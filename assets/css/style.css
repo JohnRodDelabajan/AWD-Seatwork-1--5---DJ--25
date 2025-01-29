@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    border: 2px solid #00bcd4; /* Border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Spacing */
+    background-color: #f9f9f9; /* Light background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .header .search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .search input, .search button {
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .search button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+  }
+  
+  
+  
+  /* Navbar Styles */
+  .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+    }
+    
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #00bcd4;
+    }
+    
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .nav-links li {
+      position: relative;
+    }
+    
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      padding: 8px 12px;
+      transition: color 0.3s ease;
+    }
+    
+    .nav-links a:hover {
+      color: #00bcd4;
+    }
+
+    .nav-button:hover {
+      background-color: #1e7e34;
+    }
+    
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+  }
+  
+  .card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid #00bcd4;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+  }
+  
+  .card:hover img {
+    transform: scale(1.1);
+  }
+  
+  .card .label {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .footer {
+    background: #333;
+    padding: 10px 20px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer:hover {
+    background-color: #00bcd4;
+}
+  
+  .featured .label {
+    background: #ff4d4d;
+  }
+  
+  .popular .label {
+    background: #ff7efc;
+  }
+  
+  .new .label {
+    background: #5dc9fc;
+  }
+  
