@@ -7,11 +7,9 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     flex-direction: column;
-    padding-top: 60px; /* Adds space for the fixed navbar */
+    justify-content: space-between;
+    height: 100vh; /* Ensures the body takes up full height of the viewport */
 }
 
 /* Navbar Styles */
@@ -139,11 +137,14 @@ button:hover {
 .seat:hover {
     background-color: #ff9800;
 }
+
+/* Footer Styling */
 .footer {
     background: #333;
     padding: 10px 20px;
     text-align: center;
     transition: background-color 0.3s ease, color 0.3s ease;
+    width: 100%; /* Ensures the footer spans across the full page */
 }
 
 .footer:hover {

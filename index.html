@@ -20,11 +20,26 @@
     <div class="header">
       <h1>Choose your next big trip!</h1>
       <div class="search">
-        <input type="text" placeholder="Origin">
-        <input type="text" placeholder="Destination">
+        <!-- Origin Dropdown -->
+        <select>
+          <option value="" disabled selected>Origin</option>
+          <option value="Manila">Manila</option>
+        </select>
+
+        <!-- Destination Dropdown -->
+        <select>
+          <option value="" disabled selected>Destination</option>
+          <option value="Boracay">Boracay</option>
+          <option value="El Nido">El Nido</option>
+          <!-- Add more options as needed -->
+        </select>
+
+        <!-- Date Picker -->
         <input type="date">
+
+        <!-- Search Button -->
         <a href="./pages/page1/index.html">
-            <button>Search</button>
+          <button>Search</button>
         </a>
       </div>
     </div>
@@ -43,7 +58,7 @@
       </div>
       <div class="card">
         <img src="./assets/img/elnido.jpeg" alt="El Nido">
-        <div class="label"> EL NIDO</div>
+        <div class="label">EL NIDO</div>
       </div>
       <div class="card popular">
         <img src="./assets/img/baler.jpg" alt="Baler">

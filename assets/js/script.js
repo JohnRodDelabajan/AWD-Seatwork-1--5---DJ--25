@@ -12,8 +12,3 @@ document.querySelector('.nav-links a[href="#destinations"]').addEventListener('c
     document.querySelector('.grid').scrollIntoView({ behavior: 'smooth' });
 });
 
-document.querySelectorAll('.card').forEach(card => {
-    card.addEventListener('click', () => {
-        window.location.href = '../../pages/page1/index.html';
-    });
-});
