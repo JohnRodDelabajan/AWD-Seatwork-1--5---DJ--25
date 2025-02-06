@@ -3,102 +3,125 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
   <title>Travel Layout</title>
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+  <!-- Navbar Section -->
   <nav class="navbar">
     <div class="logo">GoTravelNow</div>
     <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
+      <li><a href="./index.html">Home</a></li>
       <li><a href="#destinations">Destinations</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="./pages/page1/index.html">Reservations</a></li>
     </ul>
   </nav>
+
+  <!-- Main Content Section -->
   <div class="container">
+    <!-- Header Section -->
     <div class="header">
       <h1>Choose your next big trip!</h1>
-      <div class="search">
-        <!-- Origin Dropdown -->
-        <select>
-          <option value="" disabled selected>Origin</option>
-          <option value="Manila">Manila</option>
-        </select>
-
-        <!-- Destination Dropdown -->
-        <select>
-          <option value="" disabled selected>Destination</option>
-          <option value="Boracay">Boracay</option>
-          <option value="El Nido">El Nido</option>
-          <!-- Add more options as needed -->
-        </select>
-
-        <!-- Date Picker -->
-        <input type="date">
-
-        <!-- Search Button -->
-        <a href="./pages/page1/index.html">
-          <button>Search</button>
-        </a>
-      </div>
     </div>
+
+    <!-- Grid Section for Destination Cards -->
     <div class="grid">
-      <div class="card featured">
+      <!-- Card for Iriga -->
+      <div class="card">
         <img src="./assets/img/iriga.jpg" alt="Iriga">
         <div class="label">IRIGA</div>
+        <div class="overlay">Visit Iriga, the heart of Bicol!</div>
       </div>
+
+      <!-- Card for Sorsogon -->
       <div class="card">
         <img src="./assets/img/sorsogon.webp" alt="Sorsogon">
         <div class="label">SORSOGON</div>
+        <div class="overlay">Discover Sorsogon's hidden beaches!</div>
       </div>
+
+      <!-- Card for Clark -->
       <div class="card">
         <img src="./assets/img/clark.jpg" alt="Clark">
         <div class="label">CLARK</div>
+        <div class="overlay">Explore Clark’s urban lifestyle!</div>
       </div>
+
+      <!-- Card for El Nido -->
       <div class="card">
         <img src="./assets/img/elnido.jpeg" alt="El Nido">
         <div class="label">EL NIDO</div>
+        <div class="overlay">El Nido’s crystal waters await!</div>
       </div>
-      <div class="card popular">
+
+      <!-- Card for Baler -->
+      <div class="card">
         <img src="./assets/img/baler.jpg" alt="Baler">
         <div class="label">BALER</div>
+        <div class="overlay">Catch the waves in Baler!</div>
       </div>
+
+      <!-- Card for Baguio -->
       <div class="card">
         <img src="./assets/img/baguio.jpg" alt="Baguio">
         <div class="label">BAGUIO</div>
+        <div class="overlay">Feel the cold breeze of Baguio!</div>
       </div>
+
+      <!-- Card for Naga -->
       <div class="card">
         <img src="./assets/img/naga.webp" alt="Naga">
         <div class="label">NAGA</div>
+        <div class="overlay">Experience Naga's vibrant culture!</div>
       </div>
+
+      <!-- Card for Legazpi -->
       <div class="card">
         <img src="./assets/img/legazpi.jpg" alt="Legazpi">
         <div class="label">LEGAZPI</div>
+        <div class="overlay">See the majestic Mayon Volcano!</div>
       </div>
-      <div class="card new">
+
+      <!-- Card for Leyte -->
+      <div class="card">
         <img src="./assets/img/leyte.jpg" alt="Leyte">
         <div class="label">LEYTE</div>
+        <div class="overlay">History and nature in Leyte!</div>
       </div>
+
+      <!-- Card for Iloilo -->
       <div class="card">
         <img src="./assets/img/iloilo.jpg" alt="Iloilo">
         <div class="label">ILOILO</div>
+        <div class="overlay">Visit the heart of the Philippines!</div>
       </div>
+
+      <!-- Card for Davao -->
       <div class="card">
         <img src="./assets/img/davao.jpg" alt="Davao">
         <div class="label">DAVAO</div>
+        <div class="overlay">Taste the King of Fruits in Davao!</div>
       </div>
+
+      <!-- Card for Boracay -->
       <div class="card">
         <img src="./assets/img/boracay.jpg" alt="Boracay">
         <div class="label">BORACAY</div>
+        <div class="overlay">Relax on Boracay’s white sands!</div>
       </div>
     </div>
   </div>
+
+  <!-- Footer Section -->
   <footer class="footer">
     <div class="copyright">
-        <p>&copy; John Rod C. Delabajan || 2025</p>
+      <p>&copy; John Rod C. Delabajan || 2025</p>
     </div>
   </footer>
+
   <script src="./assets/js/script.js"></script>
 </body>
 </html>

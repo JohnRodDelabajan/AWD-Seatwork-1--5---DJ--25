@@ -3,48 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bus Reservation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Bus Reservation System</title>
     <link rel="stylesheet" href="../page1/assets/css/style.css">
 </head>
 <body>
-
     <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">GoTravelNow</div>
         <ul class="nav-links">
             <li><a href="../../index.html">Home</a></li>
-            <li><a href="#destinations">Destinations</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+    <main>
+        <!-- Bus Schedule Section -->
+        <section id="bus-schedule">
+            <div id="selection-container">
+                <!-- Destination Selection -->
+                <div class="selection-box">
+                    <h2>Select Destination</h2>
+                    <label for="destination">Select Destination:</label>
+                    <select id="destination">
+                        <option value="boracay">Boracay</option>
+                        <option value="sorsogon">Sorsogon</option>
+                    </select>
+                </div>
 
-    <!-- Main Content -->
-    <div class="container">
-        <h1>Bus Reservation System</h1>
-        <label for="bus-select">Select a Bus:</label>
-        <select id="bus-select">
-            <option value="bus1">Bus 1</option>
-            <option value="bus2">Bus 2</option>
-            <option value="bus3">Bus 3</option>
-        </select>
-        <button onclick="checkSeats()">Check Availability</button>
-        <p id="result"></p>
-    </div>
+                <!-- Bus Selection -->
+                <div class="selection-box">
+                    <h2>Available Buses</h2>
+                    <label for="bus">Select Bus:</label>
+                    <select id="bus">
+                        <option value="bus1">Standard</option>
+                        <option value="bus2">Deluxe</option>
+                        <option value="bus3">VIP</option>
+                    </select>
+                </div>
+            </div>
 
-    <!-- Bus Seats (Initially Hidden) -->
-    <div class="bus-container" id="bus-container">
-        <div class="seat" id="seat1" onclick="toggleSeat(1)">Seat 1</div>
-        <div class="seat" id="seat2" onclick="toggleSeat(2)">Seat 2</div>
-        <div class="seat" id="seat3" onclick="toggleSeat(3)">Seat 3</div>
-        <div class="seat" id="seat4" onclick="toggleSeat(4)">Seat 4</div>
-        <div class="seat" id="seat5" onclick="toggleSeat(5)">Seat 5</div>
-    </div>
-    <footer class="footer">
-        <div class="copyright">
-            <p>&copy; John Rod C. Delabajan || 2025</p>
-        </div>
-    </footer>
+            <!-- Bus Information Table -->
+            <div id="bus-info-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Departure Time</th>
+                            <th>Class</th>
+                            <th>Available Seats</th>
+                            <th>Fare</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="schedule"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Seat Reservation Section -->
+        <section id="seat-reservation-container">
+            <div id="seat-selection">
+                <h2>Select Your Seat</h2>
+                <label for="passenger-count">Number of Passengers:</label>
+                <input type="number" id="passenger-count" min="1" placeholder="Enter passenger count">
+                <div id="seat-layout" class="seat-layout"></div>
+                <button id="reserve">Reserve Seats</button>
+            </div>
+
+            <!-- Reserved Seats Display -->
+            <div id="reserved-seats-section">
+                <h2>Reserved Seats</h2>
+                <div id="reserved-seats-list"></div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="copyright">
+                <p>&copy; John Rod C. Delabajan || 2025</p>
+            </div>
+        </footer>
+    </main>
+
     <script src="../page1/assets/js/scripts.js"></script>
 </body>
 </html>
