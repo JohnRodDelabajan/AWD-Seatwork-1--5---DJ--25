@@ -4,22 +4,22 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/zyx-0314/">
+  <a href="https://github.com/JohnRodDelabajan/">
   <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
   <h3 align="center">AWD-Seatwork-1-(5)-(DJ)-25</h3>
 </div>
 <!-- TODO: Make a short description -->
-
+<div align="center">
+    Bus Reservation
 <br />
 
 <!-- TODO: Change the zyx-0314 into your github username  -->
 <!-- TODO: Change the WD-Template-Project into the same name of your folder -->
 ![](https://visit-counter.vercel.app/counter.png?page=JohnRodDelabajan/AWD-Seatwork-1-(5)-(DJ)-25)
 
-[![wakatime](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8.svg)](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8)
+[![wakatime](https://wakatime.com/badge/user/e79e4480-ee82-4b78-b636-a251c21e8375/project/1dd3116a-4752-49cc-9363-44d22ff62186.svg)](https://wakatime.com/badge/user/e79e4480-ee82-4b78-b636-a251c21e8375/project/1dd3116a-4752-49cc-9363-44d22ff62186)
 
 ---
 
@@ -58,16 +58,13 @@
 <!-- The following are just sample -->
 Description of the project in details.
 
-Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+- Bus Reservation
+- To reserve seats for the bus.
 
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
-- MultiPage Website/Single Page Website
+- MultiPage Website
 - Parallax transition
 - Transactional
 
@@ -94,16 +91,26 @@ WD-ProjectName
 |   └─ css
 |   |   └─ style.css
 |   └─ img
-|   |   └─ fileWith.jpeg/.jpg/.webp/.png
+|   |   └─baguio.jpg
+|   |   └─baler.jpg
+|   |   └─bg.gif
+|   |   └─boracay.jpg
+|   |   └─clark.jpg
+|   |   └─davao.jpg
+|   |   └─elnido.jpeg
+|   |   └─iloilo.jpg
+|   |   └─iriga.jpg
+|   |   └─legazpi.jpg
+|   |   └─leyte.jpg
+|   |   └─naga.webp
+|   |   └─sorsogon.webp
 |   └─ js
 |       └─ script.js
 └─ pages
-|  └─ pageName
+|  └─ page1
 |     └─ assets
 |     |  └─ css
 |     |  |  └─ style.css
-|     |  └─ img
-|     |  |  └─ fileWith.jpeg/.jpg/.webp/.png
 |     |  └─ js
 |     |     └─ script.js
 |     └─ index.html
@@ -116,4 +123,5 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| Google | I used this for images. | https://www.google.com/ |
+| Google Fonts | Used for Fonts. | https://fonts.google.com/ |
